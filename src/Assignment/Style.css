@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+  background-image: url("C:\PG SEM 2\React  js\week8\assignment\src\bank.jpeg"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+  overflow-x: hidden; 
+}
+
+
+nav {
+  background-color: #1f2937;
+  padding: 12px 20px;
+  display: flex;
+  gap: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+body > div {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 90px; 
+}
+
+
+body > div > div {
+  background: rgba(255, 255, 255, 0.93);
+  padding: 30px;
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+h2 {
+  text-align: center;
+  margin-bottom: 22px;
+  color: #1f2937;
+}
+
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+input:focus {
+  border-color: #2563eb;
+}
+
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1e40af;
+}
+
+
+
+body > div > div:has(table) {
+  width: 85%;
+  max-width: 900px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; 
+  margin-top: 10px;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-size: 14px;
+}
+
+th {
+  background-color: #2563eb;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+td:nth-child(3) {
+  word-break: break-all;
+}
